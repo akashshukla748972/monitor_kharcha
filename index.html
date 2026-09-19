@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Monitor Kharcha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #131b2e;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --emerald: #10b981;
+      --emerald-light: #34d399;
+      --sapphire: #3b82f6;
+      --border: #1e293b;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 30px;
+    }
+    .icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, var(--emerald), var(--sapphire));
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--emerald-light);
+      margin-top: 4px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--emerald-light);
+      margin-top: 32px;
+      margin-bottom: 12px;
+      border-left: 3px solid var(--emerald);
+      padding-left: 12px;
+    }
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: var(--text-primary);
+    }
+    .callout {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 18px 20px;
+      border-radius: 12px;
+      margin: 24px 0;
+    }
+    .callout p {
+      margin: 0;
+      color: #a7f3d0;
+      font-weight: 500;
+      font-size: 14.5px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    a {
+      color: var(--emerald-light);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="icon">💰</div>
+      <div>
+        <h1>Privacy Policy</h1>
+        <div class="meta">Monitor Kharcha • Effective Date: September 2026</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p>🛡️ <strong>Summary:</strong> Monitor Kharcha is designed as an offline-first, privacy-focused expense tracking tool. Your financial data, budgets, receipts, and PINs remain stored locally on your device. We do not sell, rent, or share your data with any third parties or advertising networks.</p>
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>Monitor Kharcha is designed from the ground up to minimize data collection. The information handled by the app includes:</p>
+    <ul>
+      <li><strong>Financial Records:</strong> Transaction titles, amounts, categories, dates, payment modes, and notes that you manually enter into the app. This data is stored locally in an encrypted SQLite database on your device.</li>
+      <li><strong>Receipt Images:</strong> Photos of bills or receipts that you choose to capture using your camera or upload from your device gallery. These images remain saved locally on your device.</li>
+      <li><strong>Profile & Budget Settings:</strong> Your preferred currency, monthly budget limits, and user display name.</li>
+    </ul>
+
+    <h2>2. Data Storage & Offline Security</h2>
+    <p>Monitor Kharcha operates completely offline. All core bookkeeping functionalities work without an active internet connection:</p>
+    <ul>
+      <li>Your data never leaves your device unless you explicitly configure the optional cloud backup.</li>
+      <li>We do not employ any third-party tracking, profiling, or behavioral advertising SDKs.</li>
+      <li>You have the ability to export your entire ledger into PDF or Excel CSV formats at any time.</li>
+    </ul>
+
+    <h2>3. Biometric & PIN Security</h2>
+    <p>The application provides optional security features to protect your financial records:</p>
+    <ul>
+      <li><strong>Biometric Authentication:</strong> Fingerprint and Face Unlock use the official Android <code>BiometricPrompt</code> system framework. Monitor Kharcha never accesses, processes, or stores your biometric data; verification is handled entirely by your operating system.</li>
+      <li><strong>4-Digit Security PIN:</strong> Your optional 4-digit PIN is stored locally on your device and is never transmitted to any external server.</li>
+    </ul>
+
+    <h2>4. Device Permissions</h2>
+    <p>The app may request the following device permissions for specific user-initiated features:</p>
+    <ul>
+      <li><strong>Camera (<code>android.permission.CAMERA</code>):</strong> Used solely to allow you to photograph physical receipts or paper invoices to attach to a transaction.</li>
+      <li><strong>Storage / Media Images (<code>READ_MEDIA_IMAGES</code>, <code>READ_EXTERNAL_STORAGE</code>):</strong> Used solely to let you pick receipt photos from your gallery and to save your exported PDF/Excel statements to your device storage.</li>
+      <li><strong>Biometrics (<code>USE_BIOMETRIC</code>):</strong> Used solely to authenticate you when unlocking the app.</li>
+      <li><strong>Vibration (<code>VIBRATE</code>):</strong> Provides haptic feedback when pressing keys on the numeric keypad.</li>
+    </ul>
+
+    <h2>5. Third-Party Sharing & Advertising</h2>
+    <p>We do <strong>NOT</strong> sell, trade, license, or transfer your financial or personal data to outside parties, marketing companies, data brokers, or advertising networks. There are zero third-party ads in Monitor Kharcha.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Monitor Kharcha is a general audience personal finance application and does not knowingly collect or solicit personal information from children under the age of 13. If you believe that a child has provided us with personal information, please contact us immediately.</p>
+
+    <h2>7. Data Deletion & Retention</h2>
+    <p>You retain 100% control over your data:</p>
+    <ul>
+      <li>Individual transactions can be deleted at any time (retained in the in-app Recycle Bin for 24 hours before automatic permanent purge).</li>
+      <li>You can purge all transactions, chat logs, and account records directly within the app settings.</li>
+      <li>Uninstalling the app or clearing app storage via Android OS settings permanently erases all local data.</li>
+    </ul>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy periodically to reflect enhancements to our services or compliance requirements. Any revisions will be reflected on this page with an updated effective date.</p>
+
+    <h2>9. Contact Information</h2>
+    <p>If you have any questions, concerns, or feedback regarding this Privacy Policy or the data practices of Monitor Kharcha, please contact us at:</p>
+    <ul>
+      <li><strong>Support Email:</strong> <a href="mailto:support@monitorkharcha.app">support@monitorkharcha.app</a></li>
+      <li><strong>Application:</strong> Monitor Kharcha - Money Manager</li>
+    </ul>
+
+    <div class="footer">
+      &copy; 2026 Monitor Kharcha. All rights reserved. Built with privacy-first architecture.
+    </div>
+  </div>
+</body>
+</html>
